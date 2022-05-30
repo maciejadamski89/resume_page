@@ -4,31 +4,36 @@ body
     font-family: $body-font-family
     color: $body-font-color
 
+.container-fluid
+    padding: 0
+
+.row 
+    margin: 0
+
 p
     font-family: $p-font-family
     font-size: $p-font-size
     color: $p-font-color
 
-h1,h2,h3,h4,h5,h6
+h2,h3,h4,h5,h6
     color: $h-font-color
+
+h1
+    color: $primary-color
 
 a
     font-family: $a-font-family
     font-size: $a-font-size
     color: $a-font-color
 
+a:hover
+    color: $light-gray
+
+a:focus
+    color: $light-gray !important
+
 a > h4:hover
-    color: $primary-color !important
+    color: $light-gray !important
 
-.container-fluid
-    padding: 0
-
-// .container-fluid:before
-//     height: 50px
-//     content: ""
-//     display: block
-
-// .container-fluid:after
-//     height: 50px
-//     content: ""
-//     display: block
+hr
+    color: $primary-color
