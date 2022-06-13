@@ -1,4 +1,4 @@
-dest/
+public/
 node_modules/
 .vscode
 package-lock.json
