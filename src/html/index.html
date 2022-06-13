@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="night">
 
 <head>
     <meta charset="utf-8">
@@ -14,284 +14,197 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="font-Poppins">
     <header>
-        <nav class="navbar navbar-expand-lg sticky-top">
-            <div class="container" style="width:80%; height:70px;">
-                <a class="navbar-brand primary-text-color" href="/">
-                    <img class="me-3" src="logo.svg" alt="" width="40" height="40">
-                    MACIEJ ADAMSKI
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars" style="color:#36C6F7; font-size:28px;"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#ce">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#te">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#ac">Awards</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
+        <div class="container">
+            <nav class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li tabindex="0">
+                                <a class="justify-between">
+                                    Parent
+                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                    </svg>
+                                </a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl">
+                        <img class="me-3" src="logo.svg" alt="" width="40" height="40"></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal p-0">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Skills</a></li>
+                        <li><a>Experience</a></li>
+                        <li><a>Awards</a></li>
+                        <li><a>Courses</a></li>
+                        <li><a>Contact</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+                <div class="navbar-end">
+                    <a class="btn btn-primary" href="http://maciejadamski89.pl/resume_maciej_adamski.pdf">Get My
+                        Resume</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
+
     <main>
-        <section class="container-fluid py-5">
-            <div class="row align-items-center justify-content-center py-xl-5">
-                <div class="col-12 col-sm-12 col-lg-6 text-center">
-                    <h1 class="display-4">DevOps</h1>
-                    <h1 class="display-4">Software Engineer</h1>
-                    <h1 class="display-4">Software Developer</h1>
-                    <p class="mt-5 lead">
-                        Hi. I am Maciej. I'm involved in software development and process automation.
-                    </p>
-                    <a href="https://twitter.com/MaciejAdamski89" aria-label="Twitter"><i
-                            class="icon fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/maciej-adamski-0455a984/" aria-label="LinkedIn"><i
-                            class="icon fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/maciejadamski89"><i class="icon fa-brands fa-github"
-                            aria-label="GitHub"></i></a>
-                    <br>
-                    <a href="https://github.com/maciejadamski89/resume_page">Checkout code of this page</a>
-                </div>
-                <div class="col-12 col-sm-12 col-lg-6 d-flex justify-content-center text-center">
-                    <img class="profile" style="width: 60%" src="profile.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="container-fluid py-5">
-            <div class="row align-items-center justify-content-center py-5">
-                <div class="col-lg-6 col-10 text-center">
-                    <h1 class="display-4">About me</h1>
-                    <p>
-                        I am a multiskill and elastic person with a huge creativity. I am able to be in the flow of
-                        things. I always look with optimism and trying make impossible things crossing self boundaries.
-                        I am very open person and I am always trying to help and share my knowledge with others.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="ce" class="container-fluid py-5">
-            <div class="row align-items-center justify-content-center py-5">
-                <div class="col-lg-6 col-10 text-center">
-                    <h1 class="display-4 mb-5">Comercial Experience</h1>
-                    <a href="https://www.nomachine.com/">
-                        <h4>NoMachine</h4>
-                    </a>
-                    <h4 class="primary-text-color">C++ Developer</h4>
-                    <p>
-                        Implementation „C for graphics”.<br>
-                        Maintaining and development services integrated with NoMachine.<br>
-                        Maintaining of streaming audio on Linux OS’s.<br>
-                        Customer support.<br>
-                    </p>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-center py-5">
-                <div class="col-lg-6 col-10 text-center">
-                    <a href="https://www.ibm.com">
-                        <h4>IBM</h4>
-                    </a>
-                    <h4 class="primary-text-color">IT specialist / DevOps Leader</h4>
-                    <p>
-                        Prepare applications for production environment, for a major French client. Work based on
-                        customer requests. My role as a DevOps leader was to maitaining our daily requests backlog,
-                        dispatching the workload, requests execution and solving problems reported by customer. I was
-                        also involved in process automation.
-                    </p>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-center py-5">
-                <div class="col-lg-6 col-10 text-center">
-                    <a href="https://www.kyndryl.com">
-                        <h4>Kyndryl</h4>
-                    </a>
-                    <h4 class="primary-text-color">Software Engineer</h4>
-                    <p>
-                        I am currently developing a portal/platform for our main French client. Its task will be
-                        automate most of the processes for managing production applications, reporting backups from all
-                        the technologies used and information about all applications and servers. The project came from
-                        my initiative and idea.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="te" class="container-fluid py-5 text-center">
-            <div class="row py-5">
-                <div class="col-lg-6 col-12 mx-auto">
-                    <h1 class="display-4 mb-5">Technical Experience</h1>
-                    <div class="row">
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-redhat-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-ubuntu-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-windows8-original"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-apple-original"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-python-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-javascript-plain"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-html5-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-css3-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-cplusplus-plain"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-bash-plain"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-django-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-docker-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-bootstrap-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-git-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-github-original-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-gitlab-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-sass-original"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-npm-original-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-gulp-plain"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-wordpress-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-vscode-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-vim-plain"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-postgresql-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-mongodb-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-firefox-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-slack-plain-wordmark"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-latex-original"></i>
-                        </div>
-                        <div class="col p-2 p-lg-3">
-                            <i class="icon devicon-androidstudio-plain-wordmark"></i>
-                        </div>
-                    </div>
-                    <div class="my-5"></div>
-                    <div class="row p-2">
-                        <div class="col">
-                            <p>Tivoli Monitoring</p>
-                            <p>Tivoli Workload Scheduler</p>
-                            <p>Rest API</p>
-                            <p>Local Area Network</p>
-                            <p>Service Now</p>
-                            <p>Agile</p>
-                            <p>MS Teams</p>
-                            <p>Discord</p>
-                            <p>MS Office</p>
-                            <p>Webex</p>
-                            <p>Notion</p>
-                        </div>
+        <section class="hero min-h-screen">
+            <div class="container">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img class="max-w-sm rounded-lg" src="profile.png" alt="">
+                    <div>
+                        <h1 class="text-6xl font-bold py-3">DevOps</h1>
+                        <h1 class="text-6xl font-bold py-3">Software Engineer</h1>
+                        <h1 class="text-6xl font-bold py-3">Software Developer</h1>
+                        <p class="py-6">
+                            Hi. I am Maciej. I'm involved in software development and process automation.
+                        </p>
+                        <button class="btn btn-primary">Get Started</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="ac" class="container-fluid py-5 text-center">
-            <div class="row py-5">
-                <div class="col-lg-6 col mx-auto">
-                    <h1 class="display-4 mb-5">Awards & Courses</h1>
-                    <p>CISCO Local Area Network lvl1</p>
-                    <p>RH124 - Red Hat System Administration</p>
-                    <p>MS 20412 Advanced Windows Server 2012 Services</p>
-                    <p>Employee of the month award - "Innovation that matters"</p>
-                </div>
+        <section class="pt-5 pb-32 text-center">
+            <div class="prose mx-auto">
+                <h1>About me</h1>
+                <p>
+                    I am a multiskill and elastic person with a huge creativity. I am able to be in the flow of
+                    things. I always look with optimism and trying make impossible things crossing self boundaries.
+                    I am very open person and I am always trying to help and share my knowledge with others.
+                </p>
             </div>
         </section>
 
-        <section id="resume" class="container-fluid text-center py-5">
-            <div class="row py-5">
-                <div class="col-lg-6 col mx-auto py-5">
-                    <h1 class="display-4 mb-5">Get Resume</h1>
-                    <a role="button" class="btn btn-outline-dark pt-3 pb-3 ps-5 pe-5"
-                        href="http://maciejadamski89.pl/resume_maciej_adamski.pdf">Download</a>
-                </div>
+        <section class="py-32 text-center">
+            <div class="prose mx-auto">
+                <h1>Comercial Experience</h1>
+                <a href="https://www.nomachine.com/">
+                    <h2>NoMachine</h2>
+                </a>
+                <h3 class="primary-text-color">C++ Developer</h3>
+                <p>
+                    Implementation „C for graphics”.<br>
+                    Maintaining and development services integrated with NoMachine.<br>
+                    Maintaining of streaming audio on Linux OS’s.<br>
+                    Customer support.<br>
+                </p>
+                <div class="divider"></div>
+                <a href="https://www.ibm.com">
+                    <h2>IBM</h2>
+                </a>
+                <h3 class="primary-text-color">IT specialist / DevOps Leader</h3>
+                <p>
+                    Prepare applications for production environment, for a major French client. Work based on
+                    customer requests. My role as a DevOps leader was to maitaining our daily requests backlog,
+                    dispatching the workload, requests execution and solving problems reported by customer. I was
+                    also involved in process automation.
+                </p>
+                <div class="divider"></div>
+                <a href="https://www.kyndryl.com">
+                    <h2>Kyndryl</h2>
+                </a>
+                <h3 class="primary-text-color">Software Engineer</h3>
+                <p>
+                    I am currently developing a portal/platform for our main French client. Its task will be
+                    automate most of the processes for managing production applications, reporting backups from all
+                    the technologies used and information about all applications and servers. The project came from
+                    my initiative and idea.
+                </p>
             </div>
         </section>
 
-        <section id="contact" class="container-fluid py-5 text-center">
-            <div class="row py-5">
-                <div class="col-lg-6 col mx-auto">
-                    <h1 class="display-4 mb-5">Contact</h1>
-                    <p><i class="fa-solid fa-mobile me-2 primary-text-color"></i>+48 510 180 212</p>
-                    <p><i class="fa-solid fa-envelope me-2 primary-text-color"></i>maciej.adamski89@gmail.com</p>
-                    <p><i class="fa-solid fa-location-dot me-2 primary-text-color"></i>55-110 Skokowa, near Wroclaw,
-                        Poland</p>
-                </div>
+        <section id="te" class="mx-auto py-5 text-center prose">
+            <h1>Technical Experience</h1>
+            <div class="grid grid-cols-4 gap-x-2 gap-y-8">
+                <i
+                    class="text-6xl hover:scale-150 transition duration-150 ease-out hover:ease-in devicon-redhat-plain-wordmark"></i>
+                <i class="text-6xl devicon-ubuntu-plain-wordmark"></i>
+                <i class="text-6xl devicon-windows8-original"></i>
+                <i class="text-6xl devicon-apple-original"></i>
+                <i class="text-6xl devicon-python-plain-wordmark"></i>
+                <i class="text-6xl devicon-javascript-plain"></i>
+                <i class="text-6xl devicon-html5-plain-wordmark"></i>
+                <i class="text-6xl devicon-css3-plain-wordmark"></i>
+                <i class="text-6xl devicon-cplusplus-plain"></i>
+                <i class="text-6xl devicon-bash-plain"></i>
+                <i class="text-6xl devicon-django-plain-wordmark"></i>
+                <i class="text-6xl devicon-docker-plain-wordmark"></i>
+                <i class="text-6xl devicon-bootstrap-plain-wordmark"></i>
+                <i class="text-6xl devicon-tailwindcss-original-wordmark"></i>
+                <i class="text-6xl devicon-git-plain-wordmark"></i>
+                <i class="text-6xl devicon-github-original-wordmark"></i>
+                <i class="text-6xl devicon-gitlab-plain-wordmark"></i>
+                <i class="text-6xl devicon-sass-original"></i>
+                <i class="text-6xl devicon-npm-original-wordmark"></i>
+                <i class="text-6xl devicon-gulp-plain"></i>
+                <i class="text-6xl devicon-wordpress-plain-wordmark"></i>
+                <i class="text-6xl devicon-vscode-plain-wordmark"></i>
+                <i class="text-6xl devicon-vim-plain"></i>
+                <i class="text-6xl devicon-postgresql-plain-wordmark"></i>
+                <i class="text-6xl devicon-mongodb-plain-wordmark"></i>
+                <i class="text-6xl devicon-firefox-plain-wordmark"></i>
+                <i class="text-6xl devicon-slack-plain-wordmark"></i>
+                <i class="text-6xl devicon-latex-original"></i>
+                <i class="text-6xl devicon-androidstudio-plain-wordmark"></i>
+                <p>Tivoli Monitoring</p>
+                <p>Tivoli Workload Scheduler</p>
+                <p>Rest API</p>
+                <p>Local Area Network</p>
+                <p>Service Now</p>
+                <p>Agile</p>
+                <p>MS Teams</p>
+                <p>Discord</p>
+                <p>MS Office</p>
+                <p>Webex</p>
+                <p>Notion</p>
             </div>
         </section>
 
-        <footer id="footer" class="container-fluid py-5 text-center">
-            <div class="row pt-5">
-                <div class="col mx-auto">
-                    <p>© Copyright 2022. Created by Maciej Adamski.</p>
-                </div>
-            </div>
+        <section id="ac" class="py-32 text-center prose mx-auto">
+            <h1>Awards</h1>
+            <p>Employee of the month award - "Innovation that matters"</p>
+        </section>
+
+        <section id="ac" class="py-32 text-center prose mx-auto">
+            <h1>Certificates</h1>
+            <p>CISCO Local Area Network lvl1</p>
+            <p>RH124 - Red Hat System Administration</p>
+            <p>MS 20412 Advanced Windows Server 2012 Services</p>
+        </section>
+
+        <section id="contact" class="py-32 text-center prose mx-auto">
+            <h1 class="display-4 mb-5">Contact</h1>
+            <p><i class="fa-solid fa-mobile mr-2"></i>+48 510 180 212</p>
+            <p><i class="fa-solid fa-envelope mr-2"></i>maciej.adamski89@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot mr-2"></i>55-110 Skokowa, near Wroclaw,
+                Poland</p>
+        </section>
+
+        <footer id="footer" class="container py-16 text-center mx-auto bg-base-200">
+            <p>© Copyright 2022. Created by Maciej Adamski.</p>
         </footer>
 
     </main>
