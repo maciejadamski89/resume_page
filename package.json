@@ -4,9 +4,8 @@
   "description": "Maciej Adamski Resume Page",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp && npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css",
-    "watch-css": "npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css --watch",
-    "watch-html": "gulp watch"
+    "build": "npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css",
+    "watch-css": "npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css --watch"
   },
   "repository": {
     "type": "git",
@@ -20,12 +19,6 @@
   "homepage": "https://maciejadamski89.pl",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",
-    "browser-sync": "^2.27.10",
-    "daisyui": "^2.15.3",
-    "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-slim": "^0.3.0",
     "tailwindcss": "^3.1.2"
   }
 }
