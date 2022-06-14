@@ -11,210 +11,41 @@
     <meta name="description" content="Personal site of Maciej Adamski.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="text-white bg-body font-inter">
     <header>
-        <div class="container">
-            <nav class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li tabindex="0">
-                                <a class="justify-between">
-                                    Parent
-                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24">
-                                        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                                    </svg>
-                                </a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn btn-ghost normal-case text-xl">
-                        <img class="me-3" src="logo.svg" alt="" width="40" height="40"></a>
+        <div class="py-6">
+            <nav
+                class="container flex items-center justify-between w-full px-8 mx-auto sm:px-8 xl:px-24 lg:px-4 md:px-8">
+                <div class="text-lg font-bold">
+                    maciej.adamski
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal p-0">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Skills</a></li>
-                        <li><a>Experience</a></li>
-                        <li><a>Awards</a></li>
-                        <li><a>Courses</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <a class="btn btn-primary" href="http://maciejadamski89.pl/resume_maciej_adamski.pdf">Get My
-                        Resume</a>
+                <ul class="items-center hidden space-x-6 lg:flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">AboutMe</a></li>
+                    <li><a href="#">Skils</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Certs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <a href="#"><button class="px-6 py-2 font-bold bg-blue-800 rounded-2xl">Get Resume</button></a>
+                </ul>
+                <div class="px-4 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z"
+                            fill=white />
+                    </svg>
                 </div>
             </nav>
         </div>
     </header>
 
-
-    <main>
-        <section class="hero min-h-screen">
-            <div class="container">
-                <div class="hero-content flex-col lg:flex-row-reverse">
-                    <img class="max-w-sm rounded-lg" src="profile.png" alt="">
-                    <div>
-                        <h1 class="text-6xl font-bold py-3">DevOps</h1>
-                        <h1 class="text-6xl font-bold py-3">Software Engineer</h1>
-                        <h1 class="text-6xl font-bold py-3">Software Developer</h1>
-                        <p class="py-6">
-                            Hi. I am Maciej. I'm involved in software development and process automation.
-                        </p>
-                        <button class="btn btn-primary">Get Started</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pt-5 pb-32 text-center">
-            <div class="prose lg:prose-xl mx-auto">
-                <h1>🤝</h1>
-                <h1>About me</h1>
-                <p>
-                    I am a multiskill and elastic person with a huge creativity. I am able to be in the flow of
-                    things. I always look with optimism and trying make impossible things crossing self boundaries.
-                    I am very open person and I am always trying to help and share my knowledge with others.
-                </p>
-            </div>
-        </section>
-
-        <section class="py-32 text-center">
-            <div class="prose lg:prose-xl mx-auto">
-                <h1>👔</h1>
-                <h1>Comercial Experience</h1>
-                <a class="hover:text-primary" href="https://www.nomachine.com/">
-                    <h2 class="hover:text-primary">NoMachine</h2>
-                </a>
-                <h3 class="primary-text-color">C++ Developer</h3>
-                <p>
-                    Implementation „C for graphics”.<br>
-                    Maintaining and development services integrated with NoMachine.<br>
-                    Maintaining of streaming audio on Linux OS’s.<br>
-                    Customer support.<br>
-                </p>
-                <div class="divider"></div>
-                <a calss="hover:text-primary" href="https://www.ibm.com">
-                    <h2 class="hover:text-primary">IBM</h2>
-                </a>
-                <h3 class="primary-text-color">IT specialist / DevOps Leader</h3>
-                <p>
-                    Prepare applications for production environment, for a major French client. Work based on
-                    customer requests. My role as a DevOps leader was to maitaining our daily requests backlog,
-                    dispatching the workload, requests execution and solving problems reported by customer. I was
-                    also involved in process automation.
-                </p>
-                <div class="divider"></div>
-                <a class="hover:text-primary" href="https://www.kyndryl.com">
-                    <h2 class="hover:text-primary">Kyndryl</h2>
-                </a>
-                <h3 class="primary-text-color">Software Engineer</h3>
-                <p>
-                    I am currently developing a portal/platform for our main French client. Its task will be
-                    automate most of the processes for managing production applications, reporting backups from all
-                    the technologies used and information about all applications and servers. The project came from
-                    my initiative and idea.
-                </p>
-            </div>
-        </section>
-
-        <section id="te" class="mx-auto py-5 text-center prose lg:prose-xl">
-            <h1>🛠</h1>
-            <h1>Technical Experience</h1>
-            <div class="grid grid-cols-4 gap-x-2 gap-y-8">
-                <i
-                    class="text-6xl hover:scale-150 transition duration-150 ease-out hover:ease-in devicon-redhat-plain-wordmark"></i>
-                <i
-                    class="text-6xl hover:scale-150 transition duration-150 ease-out hover:ease-in devicon-ubuntu-plain-wordmark"></i>
-                <i class="text-6xl devicon-windows8-original"></i>
-                <i class="text-6xl devicon-apple-original"></i>
-                <i class="text-6xl devicon-python-plain-wordmark"></i>
-                <i class="text-6xl devicon-javascript-plain"></i>
-                <i class="text-6xl devicon-html5-plain-wordmark"></i>
-                <i class="text-6xl devicon-css3-plain-wordmark"></i>
-                <i class="text-6xl devicon-cplusplus-plain"></i>
-                <i class="text-6xl devicon-bash-plain"></i>
-                <i class="text-6xl devicon-django-plain-wordmark"></i>
-                <i class="text-6xl devicon-docker-plain-wordmark"></i>
-                <i class="text-6xl devicon-bootstrap-plain-wordmark"></i>
-                <i class="text-6xl devicon-tailwindcss-original-wordmark"></i>
-                <i class="text-6xl devicon-git-plain-wordmark"></i>
-                <i class="text-6xl devicon-github-original-wordmark"></i>
-                <i class="text-6xl devicon-gitlab-plain-wordmark"></i>
-                <i class="text-6xl devicon-sass-original"></i>
-                <i class="text-6xl devicon-npm-original-wordmark"></i>
-                <i class="text-6xl devicon-gulp-plain"></i>
-                <i class="text-6xl devicon-wordpress-plain-wordmark"></i>
-                <i class="text-6xl devicon-vscode-plain-wordmark"></i>
-                <i class="text-6xl devicon-vim-plain"></i>
-                <i class="text-6xl devicon-postgresql-plain-wordmark"></i>
-                <i class="text-6xl devicon-mongodb-plain-wordmark"></i>
-                <i class="text-6xl devicon-firefox-plain-wordmark"></i>
-                <i class="text-6xl devicon-slack-plain-wordmark"></i>
-                <i class="text-6xl devicon-latex-original"></i>
-                <i class="text-6xl devicon-androidstudio-plain-wordmark"></i>
-                <p class="text-xl hover:scale-150 transition duration-150 ease-out hover:ease-in">Tivoli Monitoring</p>
-                <p>Tivoli Workload Scheduler</p>
-                <p>Rest API</p>
-                <p>Local Area Network</p>
-                <p>Service Now</p>
-                <p>Agile</p>
-                <p>MS Teams</p>
-                <p>Discord</p>
-                <p>MS Office</p>
-                <p>Webex</p>
-                <p>Notion</p>
-            </div>
-        </section>
-
-        <section id="ac" class="py-32 text-center prose lg:prose-xl mx-auto">
-            <h1>🏆</h1>
-            <h1>Awards</h1>
-            <p>Employee of the month award - "Innovation that matters"</p>
-        </section>
-
-        <section id="ac" class="py-32 text-center prose lg:prose-xl mx-auto">
-            <h1>🎓</h1>
-            <h1>Certificates</h1>
-            <p>CISCO Local Area Network lvl1</p>
-            <p>RH124 - Red Hat System Administration</p>
-            <p>MS 20412 Advanced Windows Server 2012 Services</p>
-        </section>
-
-        <section id="contact" class="py-32 text-center prose lg:prose-xl mx-auto">
-            <h1>📱</h1>
-            <h1>Contact</h1>
-            <p><i class="fa-solid fa-mobile mr-2 text-primary"></i>+48 510 180 212</p>
-            <p><i class="fa-solid fa-envelope mr-2 text-primary"></i>maciej.adamski89@gmail.com</p>
-            <p><i class="fa-solid fa-location-dot mr-2 text-primary"></i>55-110 Skokowa, near Wroclaw,
-                Poland</p>
-        </section>
-
-        <footer id="footer" class="container py-16 text-center mx-auto bg-base-200">
-            <p>© Copyright 2022. Created by Maciej Adamski.</p>
-        </footer>
-
-    </main>
     <script src="scripts.js" type="text/javascript"></script>
 </body>
 
