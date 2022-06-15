@@ -25,16 +25,15 @@
                     maciej.adamski
                 </div>
                 <ul class="items-center hidden space-x-6 lg:flex">
-                    <li><a href="#" class="hover:py-2 hover:border-b-4">Home</a>
-                    </li>
-                    <li><a href="#" class="hover:py-2 hover:border-b-4">AboutMe</a></li>
-                    <li><a href="#" class="hover:py-2 hover:border-b-4">Skils</a></li>
-                    <li><a href="#" class="hover:py-2 hover:border-b-4">Experience</a></li>
+                    <li><a href="#" class="hover:py-2 hover:border-b-4">Home</a></li>
+                    <li><a href="#about" class="hover:py-2 hover:border-b-4">AboutMe</a></li>
+                    <li><a href="#experience" class="hover:py-2 hover:border-b-4">Experience</a></li>
                     <li><a href="#" class="hover:py-2 hover:border-b-4">Skills</a></li>
                     <li><a href="#" class="hover:py-2 hover:border-b-4">Awards</a></li>
                     <li><a href="#" class="hover:py-2 hover:border-b-4">Certs</a></li>
                     <li><a href="#" class="hover:py-2 hover:border-b-4">Contact</a></li>
-                    <a href="#"><button class="px-6 py-2 font-bold bg-blue-800 rounded-2xl hover:bg-blue-900">Get
+                    <a href="http://maciejadamski89.pl/resume_maciej_adamski.pdf"><button
+                            class="px-6 py-2 font-bold bg-blue-800 rounded-2xl hover:bg-blue-900">Get
                             Resume</button></a>
                 </ul>
                 <div class="px-4 lg:hidden">
@@ -49,8 +48,9 @@
     </header>
 
     <main>
-        <section class="container h-screen mx-auto mt-16 xl:mt-32 lg:mt-32">
-            <div class="grid grid-cols-1 px-8 md:grid-cols-2 lg:px-24 gap-y-20 md:gap-y-0">
+        <!-- Hero -->
+        <section class="container mx-auto mt-16 mb-16 md:mb-0 xl:h-screen lg:mt-32">
+            <div class="grid grid-cols-1 px-8 md:grid-cols-2 xl:px-24 gap-y-20 md:gap-y-0">
                 <div class="flex flex-col justify-center items-left">
                     <h1 class="my-2 text-3xl font-bold xl:text-5xl">DevOps<span class="text-blue-900">.</span></h1>
                     <h1 class="my-2 text-3xl font-bold xl:text-5xl">Software Engineer<span
@@ -62,9 +62,67 @@
                     </p>
                 </div>
                 <div class="flex items-center justify-center">
-                    <img src="profile.jpg" alt="Maciej Adamski" class="w-1/2 xl:w-8/12 rounded-xl opacity-80 -z-1">
+                    <img src="profile.jpg" alt="Maciej Adamski" class="w-10/12 xl:w-8/12 rounded-xl opacity-80">
                 </div>
             </div>
+        </section>
+
+        <!-- About -->
+        <section id="about"
+            class="container p-8 mx-auto mt-32 space-y-8 text-left mb-60 xl:mt-0 md:space-y-12 xl:px-24 ">
+            <h1 class="text-3xl font-bold xl:text-5xl section-title">About me<span class="text-blue-900">.</span></h1>
+            <p class="text-xl text-gray-400">
+                Hi, I'm Maciej. I deal with software development, package management, automation and web design. I can
+                easily establish new contacts. I'm strongly involved in every project. Performance and design are key
+                for me.
+            </p>
+            <a href="#"><button class="px-6 py-2 mt-8 font-bold bg-blue-800 rounded-2xl hover:bg-blue-900">Contact
+                    with me</button></a>
+        </section>
+
+        <!-- Experience-->
+        <section id="experience" class="container p-8 mx-auto text-left xl:px-24">
+            <h1 class="text-3xl font-bold xl:text-5xl section-title">Technical Experience<span
+                    class="text-blue-900">.</span></h1>
+            <div class="space-y-4">
+                <a href="https://www.nomachine.com/"><button
+                        class="px-6 py-2 mt-8 font-bold bg-blue-800 rounded-2xl hover:bg-blue-900">NoMachine
+                    </button></a>
+                <h2 class="text-3xl ">C++ Developer</h2>
+                <p class="text-xl text-gray-400">
+                    Implementation „C for graphics”.<br>
+                    Maintaining and development services integrated with NoMachine.<br>
+                    Maintaining of streaming audio on Linux OS’s.<br>
+                    Customer support.<br>
+                </p>
+            </div>
+
+            <div class="mt-16 space-y-4">
+                <a href="https://www.nomachine.com/"><button
+                        class="px-6 py-2 mt-8 font-bold bg-blue-800 rounded-2xl hover:bg-blue-900">IBM
+                    </button></a>
+                <h2 class="text-3xl ">IT specialist / DevOps Leader</h2>
+                <p class="text-xl text-gray-400">
+                    Prepare applications for production environment, for a major French client. Work based on
+                    customer requests. My role as a DevOps leader was to maitaining our daily requests backlog,
+                    dispatching the workload, requests execution and solving problems reported by customer. I was
+                    also involved in process automation.
+                </p>
+            </div>
+
+            <div class="mt-16 space-y-4">
+                <a href="https://www.kyndryl.com/"><button
+                        class="px-6 py-2 mt-8 font-bold bg-blue-800 rounded-2xl hover:bg-blue-900">Kyndryl
+                    </button></a>
+                <h2 class="text-3xl ">Software Engineer</h2>
+                <p class="text-xl text-gray-400">
+                    I am currently developing a portal/platform for our main French client. Its task will be
+                    automate most of the processes for managing production applications, reporting backups from all
+                    the technologies used and information about all applications and servers. The project came from
+                    my initiative and idea.
+                </p>
+            </div>
+
         </section>
     </main>
 
